@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" media="all">
+  <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>AppinessTest</title>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./css/kixr_examples.css">
+  <link rel="stylesheet" type="text/css" href="./css/kixr_select.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+  <script>
+    var sourcemodel = [1, 2, 3, 4];
+
+    $(document).ready(() => {
+
+
+      var name = 'Dr.Vijay Agarwal';
+      var prop = 'MD.MRCP PhD,CCT';
+      var prop1 = 'Lead & Consultant-Medical Oncology & Haematology';
+      var prop2 = 'Dr.Vijay Agarwal is a senior Consultant Medical Oncologist with';
+      var prop3 = 'over 12 years of experience in Oncology Dr Agarwal has been';
+      var prop4 = 'practising Medical Oncology since 2004';
+
+
+      for (let i = 0; i < sourcemodel.length; i++) {
+
+
+        $('#imgAndData ul').append(`
+    <li class="images">
+        <img src="assets/Bitmap/png/Bitmap Copy 7.png" >
+        <br><br>
+        <span  class="drName" >` + name + `</span><br>
+        <span class="docName" >` + prop + `</span><br>
+        <span class="docName" >` + prop1 + `</span><br>
+        <br>
+        <span  class="downText" >` + prop2 + `</span><br>
+        <span  class="downText" >` + prop3 + `</span><br>
+        <span  class="downText" >` + prop4 + `</span><br><br>
+        <button class="moreBtn">Know more</button>
+        <br><br><br>
+    </li>`)
+
+      }
+
+
+      //Second time Row images
+      var sourceImages = [1, 2, 3];
+      var nameLast = 'John Doe';
+      var propLast = 'Softwere Engineer';
+      var proplast1 = 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+      for (let i = 0; i < sourceImages.length; i++) {
+
+
+        $('.imagesSection ul').append(`
+    <li class="imagesLast">
+      <div class="imagAndTextSection">
+      <div>
+        <img src="assets/Bitmap Copy 3-2021-12-20+05_52_28.525108/png/Bitmap Copy 3.png" >
+        </div>
+        <div class="docNames">
+         <span  class="drName1" >` + nameLast + `</span><br>
+         <span class="propLast" >` + propLast + `</span>
+          </div>
+          </div>
+            <br>
+        <span class="propLast1" >` + proplast1 + `</span><br>
+    </li>`)
+
+      }
+
+    })
+
+  </script>
+
+</head>
+
+<body>
+  <img class="headImg" src="assets/Banner_mage/png/Banner_mage 2.png" />
+
+  <div class="container-fluid" id="textOnImage">
+    <div class="row">
+      <div class="col-lg-9 col-md-9">
+        <div><img class="headImage" src="assets/Aster_logo_white/png/Aster_logo_white.png" /></div>
+        <div class="texing">ADULT & PAEDIATRIC BONE MARROW</div>
+        <div class="texing">TRANSPLANT PROGRAMME</div>
+        <div class="texing-small">haematology | Oncology | Immunology</div>
+        <button class="headBtn">Book An Appointment</button>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+        <div class="enquireForm">
+          <div>
+            <div class="row1">Enquire now</div>
+            <input type="text" name="Name" value="Name" class="details"><br>
+            <input type="text" name="Email" value="Email ID" class="details">
+            <input type="text" name="number" value="Phone number" class="details">
+            <input type="text" name="message" value="Your message" class="details1">
+            <input type="text" name="number" value="Phone number" class="details1">
+          </div>
+          <button class="headBtn1">Submit</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container" id="sectionTwo">
+    <div class="row">
+      <div class="col-lg-5 col-md-5">
+        <div><img class="imgTwo" src="assets/Group 3/png/Group 3.png" /></div>
+      </div>
+
+      <div class="col-lg-7 col-md-7">
+        <div style="position: relative;top: 30px;">
+          <div>
+            <div class="rightText">Bone Marrow transplant(BMT)better known as haematopoietic<br>
+              stem cell transplant(HSCT)as bone marrow cells are transplanted
+            </div>
+
+            <h4 class="sideText">Replacement of diseased or defective marrow with marrow from from a healthy done</h4>
+            <hr class="new1">
+            <h4 class="sideText">Medicines and in certain situations radiotherapy as well is given to get rid of
+              diseased</h4>
+            <h4 class="sideText">marrow and bone marrow cells from healthy donor is given to replace it</h4>
+            <hr class="new1">
+            <h4 class="sideText">IN autologous bone marrow transplant high does chemotherapy is given to kill</h4>
+            <h4 class="sideText">cancer cells and child own marrow cells are given back</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="doctorsText">Doctors</h2>
+
+
+  <div id="imgAndData">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6" style="text-align: center;">
+          <h4 class="titletext">Pediatric BMT</h4>
+        </div>
+        <div class="col-lg-6 col-md-6" style="text-align: center;">
+          <h4 class="titletext">Abult BMT</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12" style="text-align: center;">
+          <ul id="imgFlow">
+          </ul>
+        </div>
+
+        <h2 class="maintext">What are the types of Bone Marrow Transplant?</h2>
+
+        <div class="plustext">
+          <img src="assets/hospital (2)-2021-12-20+05_43_31.806673/png/hospital (2).png">
+          <span class="pText">Autologous Bone Marrow Transplant - Marrow cells are collected from the patient’s own body
+            and transfused back after high dose chemotherapy. </span><br>
+          <img src="assets/hospital (2)-2021-12-20+05_43_31.806673/png/hospital (2).png">
+          <span class="pText">Allogenic Bone Marrow Transplant (Matched Sibling Donor) – Replacement of diseased or
+            defective marrow with marrow from a genetically (HLA) matched sibling donor.</span><br>
+          <img src="assets/hospital (2)-2021-12-20+05_43_31.806673/png/hospital (2).png">
+          <span class="pText">Allogenic Bone Marrow Transplant (Matched Unrelated Donor) – Replacement of diseased or
+            defective marrow with marrow from a genetically (HLA) matched donor obtained from bone marrow registries in
+            India and abroad. </span><br>
+          <img src="assets/hospital (2)-2021-12-20+05_43_31.806673/png/hospital (2).png">
+          <span class="pText">Haplo-Identical Bone Marrow Transplant - Replacement of diseased or defective marrow with
+            marrow from the parent. </span><br>
+          <img src="assets/hospital (2)-2021-12-20+05_43_31.806673/png/hospital (2).png">
+          <span class="pText">Umbilical cord Bone Marrow Transplant - Replacement of diseased or defective marrow with
+            marrow from a genetically (HLA) matched umbilical cord donor obtained from umbilical cord registries in
+            India and abroad.</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container">
+    <div class="row imagesSection imagesSection1">
+      <h2 class="plustext">The warning signs of Immune deficiency</h2>
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group 2-2021-12-20+05_35_45.996438/png/Group 2.png">
+        <p class="imgTexting">Failure to thrive – not gaining weight and height as per the age norms</p>
+      </div>
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group-2021-12-20+05_36_02.607386/png/Group.png">
+        <p class="imgTexting">Infections warranting multiple hospitalizations</p>
+      </div>
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group-2021-12-20+05_38_18.628564/png/Group.png">
+        <p class="imgTexting">Requirement of intravenous antibiotics to clear infections</p>
+      </div>
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group-2021-12-20+05_38_34.366419/png/Group.png">
+
+        <p class="imgTexting">Requirement of intravenous antibiotics to clear infections</p>
+      </div>
+    </div>
+    <div class="row imagesSection imagesSection1">
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group-2021-12-20+05_38_50.955333/png/Group.png">
+        <p class="imgTexting">Family history of death of children at young age due to immune deficiency</p>
+      </div>
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group-2021-12-20+05_40_25.561483/png/Group.png">
+        <p class="imgTexting">Repeated episodes of diarrhea</p>
+      </div>
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group 2-2021-12-20+05_40_40.469750/png/Group 2.png">
+        <p class="imgTexting">2 or more episodes of sinus infections within a year</p>
+      </div>
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group 2-2021-12-20+05_40_59.207995/png/Group 2.png">
+        <p class="imgTexting">2 or more episodes of ear discharge</p>
+      </div>
+    </div>
+    <div class="row imagesSection imagesSection1">
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group 2-2021-12-20+05_41_14.784627/png/Group 2.png">
+        <p class="imgTexting">Repeated skin infections</p>
+      </div>
+      <div class="col-lg-3 col-md-3 borderDiv">
+        <img class="imgHeight" src="assets/Group-2021-12-20+05_43_58.068760/png/Group.png">
+        <p class="imgTexting">Repeated abscess formation (liver abscess, brain abscess)</p>
+      </div>
+      <div class="col-lg-3 col-md-3">
+      </div>
+      <div class="col-lg-3 col-md-3">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <h3 class="semiSection">What are the conditions that requireBone Marrow Transplant?
+          <span class="path"><img src="assets/Path Copy 6-2021-12-20+05_52_04.018471/png/Path Copy 6.png"> </span>
+        </h3>
+
+        <div class="plustext">
+          <img src="assets/double-tick-indicator-2021-12-20+05_46_03.226131/png/double-tick-indicator.png">
+          <span class="pText">BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia,
+            bone marrow failure syndromes like Aplastic anemia, serious immune deficiencies and certain genetic
+            metabolic disorders </span><br>
+          <img src="assets/double-tick-indicator-2021-12-20+05_46_03.226131/png/double-tick-indicator.png">
+          <span class="pText"> It is also used to treat high risk cancers like some cases of Acute Lymphoblastic
+            Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like Neuroblastoma, Ewings Sarcoma and
+            certain relapsed cancers like Lymphomas</span><br>
+        </div>
+
+        <h3 class="semiSection semiSectionTwo">Which are the hematological diseases that may benefit from bone marrow
+          transplants?
+          <span class="path"><img src="assets/Path Copy 6-2021-12-20+05_52_04.018471/png/Path Copy 6.png"> </span>
+        </h3>
+
+        <h3 class="semiSection semiSectionTwo">Which are the Cancers that may benefit from bone marrow transplants?
+          <span class="path"><img src="assets/Path Copy 6-2021-12-20+05_52_04.018471/png/Path Copy 6.png"> </span>
+        </h3>
+
+        <h3 class="semiSection semiSectionTwo">Do bone marrow failure syndromes require BMT?
+          <span class="path"><img src="assets/Path Copy 6-2021-12-20+05_52_04.018471/png/Path Copy 6.png"> </span>
+        </h3>
+
+        <h3 class="semiSection semiSectionTwo">What are Primary Immune Deficiency diseases ?
+          <span class="path"><img src="assets/Path Copy 6-2021-12-20+05_52_04.018471/png/Path Copy 6.png"> </span>
+        </h3>
+
+        <h3 class="semiSection semiSectionTwo">Which are the immune deficiencies that warrant BMT?
+          <span class="path"><img src="assets/Path Copy 6-2021-12-20+05_52_04.018471/png/Path Copy 6.png"> </span>
+        </h3>
+
+        <h3 class="semiSection semiSectionTwo">What makes transplants at Aster CMI unique?
+          <span class="path"><img src="assets/Path Copy 6-2021-12-20+05_52_04.018471/png/Path Copy 6.png"> </span>
+        </h3>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row imagesSection">
+      <h2 class="plustext">Testimonials</h2>
+      <p class="paraText">It is a long established fact that a reader will be distracted by the readable content of a
+        page when looking at its layout.</p>
+
+
+      <ul id="imgFlow1">
+      </ul>
+
+
+    </div>
+    <div style="text-align: center;"><button class="bookingBtn">Book An Appointment</button></div>
+  </div>
+
+  <div class="footer">
+    <div class="icons">
+      <span class="iconSizes"><img src="assets/Group 25-2021-12-20+05_55_02.184196/png/Group 25.png"></span>
+      <span class="iconSizes"><img src="assets/Group 26-2021-12-20+05_54_43.222476/png/Group 26.png"> </span>
+      <span class="iconSizes"><img src="assets/Group 27-2021-12-20+05_54_25.812418/png/Group 27.png"></span>
+      <span class="iconSizes"><img src="assets/Group 37-2021-12-20+05_54_09.610613/png/Group 37.png"></span>
+      <span class="iconSizes"><img src="assets/Group 38-2021-12-20+05_53_51.313012/png/Group 38.png"></span>
+    </div>
+    <hr class="hrWidth">
+    <h6 class="footerText">Aster CMI. All Rights Reserved</h6>
+
+  </div>
+
+</body>
+
+</html>
